@@ -46,12 +46,32 @@ Todos.find().then(data => {
 
 };
 
+exports.removeTodo = (req,res)=>{
+
+  const todo_id = req.body.todo_id 
+
+  Todos.deleteOne({_id: todo_id})
+  .then(data=>{
+    res.send({
+      message:`${data} Deleted`
+    })
+  })
+  .catch(err=>{
+    res.status(500).send({
+      message:
+        err.message || "Something went wrong!"
+    })
+  })
+
+
+}
+
 exports.deleteAll = (req, res) => {
 
-  Courses.deleteMany({})
+  Todos.deleteMany({})
   .then(data => {
     res.send({
-      message: `${data.deletedCount} Courses were deleted successfully!`
+      message: `${data.deletedCount} Todoes were deleted successfully!`
     });
   })
   .catch(err => {

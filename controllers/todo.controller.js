@@ -7,7 +7,7 @@ exports.create = (req, res) => {
 
       console.log(req)
   if (!req.body.todo_title && !req.body.todo_description) {
-    res.status(400).send({ message: "Course Name is Required!" });
+    res.status(400).send({ message: "Todo Title is Required!" });
     return;
   }
 

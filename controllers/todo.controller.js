@@ -5,16 +5,22 @@ const Todos = db.todos;
 exports.create = (req, res) => {
       // Validate request
 
-      console.log(req)
-  if (!req.body.todo_title && !req.body.todo_description) {
-    res.status(400).send({ message: "Todo Title is Required!" });
+  console.log(req)
+  if (!req.body.user_id) {
+    res.status(400).send({ message: "User ID is Required!" });
     return;
   }
+  if (!req.body.todo_title) {
+    res.status(400).send({ message: "Todo title is Required!" });
+    return;
+  }
+  
 
   // Create a Tutorial
   const todo_data = new Todos({
     todo_title: req.body.todo_title,
-    todo_description: req.body.todo_description
+    todo_description: req.body.todo_description,
+    user_id: req.body.user_id
    
   })
   console.log(todo_data)

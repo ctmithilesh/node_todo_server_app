@@ -9,8 +9,8 @@ module.exports = app => {
     // Find All Todos
     router.get("/todo/find/all",Todos.findAll)
 
-    router.delete("/todo/delete",Todos.removeTodo)
-    router.delete("/todo/delete/all",Todos.deleteAll)
+    router.post("/todo/delete",Todos.removeTodo)
+    router.post("/todo/delete/all",Todos.deleteAll)
  
  
   

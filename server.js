@@ -4,7 +4,7 @@ const app = express()
 const mongoose = require('mongoose')
 
 var corOptions  = {
-    origin:true
+    origin:['https://svelte-jwt-todo-login-app.vercel.app','http://localhost:5173']
 }
 
 app.use(cors(corOptions))

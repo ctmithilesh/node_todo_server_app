@@ -4,7 +4,12 @@ const app = express()
 const mongoose = require('mongoose')
 
 var corOptions  = {
-    origin:['https://todolist-rust-psi.vercel.app','http://localhost:5173']
+    origin:[
+        'https://todolist-rust-psi.vercel.app',
+        'http://localhost:5173',
+        'http://localhost:8080'
+      
+      ]
 }
 
 app.use(cors(corOptions))

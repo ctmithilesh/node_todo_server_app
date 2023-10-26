@@ -7,7 +7,7 @@ module.exports = app => {
     router.post("/todo/add", Todos.create);
 
     // Find All Todos
-    router.get("/todo/find/all",Todos.findAll)
+   // router.get("/todo/find/all",Todos.findAll)
 
     // Get individual Todo 
     router.get("/todo/find/:id", Todos.findOneTodo)

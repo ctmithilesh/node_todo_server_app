@@ -3,13 +3,13 @@ const cors = require('cors')
 const app = express()
 const mongoose = require('mongoose')
 
-var corOptions  = {
-    origin:[
-        'https://todolist-rust-psi.vercel.app',
-        'http://localhost:5173',
-        'http://localhost:8080'.
-        'https://todo-sooty-nu.vercel.app/'
-      ]
+var corOptions = {
+  origin: [
+    'https://todolist-rust-psi.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:8080',
+    'https://todo-sooty-nu.vercel.app'
+  ]
 }
 
 app.use(cors(corOptions))
@@ -75,7 +75,7 @@ db.mongoose.connect(db.url, {
 require('./routes/todo.routes')(app);
 require('./routes/auth.routes')(app);
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to Todo Demo Server 1.0" });
+  res.json({ message: "Welcome to Todo Demo Server 1.0" });
 });
 
 // set port, listen for requests
@@ -83,4 +83,3 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-  

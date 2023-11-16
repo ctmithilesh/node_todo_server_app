@@ -1,26 +1,26 @@
 module.exports = app => {
-    const Todos = require("../controllers/todo.controller");
-  
-    var router = require("express").Router();
-  
-    // Create a new Todo
-    router.post("/todo/add", Todos.create);
+  const Todos = require("../controllers/todo.controller");
 
-    // Find All Todos
-   // router.get("/todo/find/all",Todos.findAll)
+  var router = require("express").Router();
 
-    // Get individual Todo 
-    router.get("/todo/find/:id", Todos.findOneTodo)
+  // Create a new Todo
+  router.post("/todo/add", Todos.create);
 
-    // Find Todos by user 
-    router.post("/todo/find/user", Todos.findTodoByUser)
+  // Find All Todos
+  // router.get("/todo/find/all",Todos.findAll)
 
-    router.post("/todo/delete",Todos.removeTodo)
-    router.post("/todo/delete/all",Todos.deleteAll)
+  // Get individual Todo 
+  router.get("/todo/find/:id", Todos.findOneTodo)
 
-    router.put("/todo/update/:id",Todos.updateTodo)
- 
- 
-  
-    app.use('/api', router);
-  };
+  // Find Todos by user 
+  router.post("/todo/find/user", Todos.findTodoByUser)
+
+  router.post("/todo/delete", Todos.removeTodo)
+  router.post("/todo/delete/all", Todos.deleteAll)
+
+  router.put("/todo/update/:id", Todos.updateTodo)
+
+
+
+  app.use('/api', router);
+};

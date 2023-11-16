@@ -7,8 +7,8 @@ var corOptions  = {
     origin:[
         'https://todolist-rust-psi.vercel.app',
         'http://localhost:5173',
-        'http://localhost:8080'
-      
+        'http://localhost:8080'.
+        'https://todo-sooty-nu.vercel.app/'
       ]
 }
 

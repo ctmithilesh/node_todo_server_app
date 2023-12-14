@@ -11,6 +11,8 @@ db.todos = require("./todo.model");
 db.user = require("./user.model")
 db.role = require("./role.model")
 
+db.expense = require("./expense.model")
+
 db.ROLES = ["user", "admin", "moderator"];
 
 module.exports = db;

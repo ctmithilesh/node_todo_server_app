@@ -8,6 +8,7 @@ var corOptions = {
     'https://todolist-rust-psi.vercel.app',
     'http://localhost:5173',
     'http://localhost:8080',
+    'http://localhost:3000',
     'https://todo-sooty-nu.vercel.app',
     'https://vue-randomize-app.vercel.app'
   ]

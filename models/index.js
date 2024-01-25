@@ -10,6 +10,7 @@ db.url = dbConfig.url
 db.todos = require("./todo.model");
 db.user = require("./user.model")
 db.role = require("./role.model")
+db.image = require("./image.model")
 
 db.expense = require("./expense.model")
 

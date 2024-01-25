@@ -77,6 +77,7 @@ db.mongoose.connect(db.url, {
 require('./routes/todo.routes')(app);
 require('./routes/auth.routes')(app);
 require('./routes/expense.routes')(app);
+require('./routes/upload.routes')(app);
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Todo Demo Server 1.0" });

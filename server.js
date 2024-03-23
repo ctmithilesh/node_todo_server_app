@@ -10,6 +10,7 @@ var corOptions = {
     'http://localhost:5174',
     'http://localhost:8080',
     'http://localhost:3000',
+    'http://localhost:4200',
     'https://todo-sooty-nu.vercel.app',
     'https://vue-randomize-app.vercel.app',
     'https://react-todo-basic-app.vercel.app'

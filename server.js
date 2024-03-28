@@ -13,7 +13,8 @@ var corOptions = {
     'http://localhost:4200',
     'https://todo-sooty-nu.vercel.app',
     'https://vue-randomize-app.vercel.app',
-    'https://react-todo-basic-app.vercel.app'
+    'https://react-todo-basic-app.vercel.app',
+    'https://ng-expense-manager-app.vercel.app'
   ]
 }
 
